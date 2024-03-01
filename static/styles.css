@@ -1,0 +1,20 @@
+body
+{
+  font-family: poppins,sans-serif;
+  background-color: azure;
+  font-size: 1.5rem;
+}
+.container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+#button
+{
+
+  border-radius: 10px;
+  padding: 10px 30px;
+}

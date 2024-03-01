@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>IRIS PREDICTION</title>
+</head>
+<body>
+  <div class="container">
+    <h1>IRIS SPECIES PREDICTION ML</h1>
+  <form action="predict" method="post">
+    <label for="input1">sepal length :</label>
+    <input type="number" step=".01"id="input1" name="input1" required>
+
+    <label for="input2">sepal width :</label>
+    <input type="number" step=".01"id="input2" name="input2" required>
+
+    <label for="input3">petal length :</label>
+    <input type="number" step=".01"id="input3" name="input3" required>
+
+    <label for="input4">petal width :</label>
+    <input type="number" step=".01"id="input4" name="input4" required>
+
+    <input type="submit" value="Predict" id="button">
+  </form>
+  <h2>The Prediction : {{pred}}</h2>
+  </div>
+  
+</body>
+</html>
